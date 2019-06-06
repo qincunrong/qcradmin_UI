@@ -1,0 +1,47 @@
+fitCenter(max_width, max_height) {
+  width max_width
+  height auto
+  max-width auto
+  max-height auto
+}
+
+divider(color = $color_divider_gray, lineWidth = 0.1rem, lineHeight = 1.6rem) {
+  display inline-block
+  height lineHeight
+  width lineWidth
+  background color
+}
+
+roundBorder(bounderRadius = 1em) {
+  border 1px
+  border-style solid
+  border-color $color_divider_gray
+  border-radius bounderRadius
+}
+
+
+imageFitCenter(imageWidth, imageHeight) {
+  width imageWidth
+  height imageHeight
+  overflow  hidden
+  background-position center center
+  background-repeat  no-repeat
+  -webkit-background-size contain
+  -moz-background-size contain
+  background-size contain
+}
+
+imageCenterCrop(imageWidth, imageHeight) {
+  width imageWidth
+  height imageHeight
+  overflow  hidden
+  background-position center center
+  background-repeat  no-repeat
+  -webkit-background-size cover
+  -moz-background-size cover
+  background-size cover
+}
+
+
+
+
