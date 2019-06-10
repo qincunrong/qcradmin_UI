@@ -10,6 +10,9 @@ import StringUtils from '@js/StringUtils'
 //css
 import '@css/reset_ui.css'
 
+//mock
+import Mock from './mock'
+Mock.bootstrap();
 
 Vue.use(ElementUI);
 Vue.config.productionTip = false
