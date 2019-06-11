@@ -5,7 +5,7 @@ fitCenter(max_width, max_height) {
   max-height auto
 }
 
-divider(color = $color_divider_gray, lineWidth = 0.1rem, lineHeight = 1.6rem) {
+divider(color , lineWidth = 0.1rem, lineHeight = 1.6rem) {
   display inline-block
   height lineHeight
   width lineWidth
@@ -17,6 +17,12 @@ roundBorder(bounderRadius = 1em) {
   border-style solid
   border-color $color_divider_gray
   border-radius bounderRadius
+}
+
+borderRadius(radius){
+  -webkit-border-radius: radius;
+  border-radius: radius;
+  -moz-border-radius: radius;
 }
 
 
