@@ -4,16 +4,14 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import ElementUI from 'element-ui';
-//js
+import Mock from './mock'
+
+import '@css/reset_ui.css'
+// import 'element-ui/lib/theme-chalk/index.css'
+import './theme/element_theme.css'
 import StringUtils from '@js/StringUtils'
 
-//css
-import '@css/reset_ui.css'
-
-//mock
-import Mock from './mock'
 Mock.bootstrap();
-
 Vue.use(ElementUI);
 Vue.config.productionTip = false
 
