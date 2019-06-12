@@ -26,8 +26,8 @@
           return{
             rememberChecked:true,
             loginForm:{
-              username: "qincr",
-              password:123456
+              username: "admin",
+              password:'123456'
             },
             loginValidate:{
               username:[
@@ -54,6 +54,7 @@
                   }else {
                     //登录成功
                     sessionStorage.setItem('user',JSON.stringify(user))
+                    this.$router.push("/user")
                   }
                 })
               }else {
@@ -62,8 +63,11 @@
               }
             })
         }
-      }
+      },
+    mounted() {
+
     }
+  }
 </script>
 
 <style scoped lang="stylus">
