@@ -1,0 +1,17 @@
+
+/*table表行高*/
+/*.el-table__header tr,*/
+/*.el-table__header th {*/
+  /*padding: 0;*/
+  /*height: 50px;*/
+/*}*/
+/*.el-table__body tr,*/
+/*.el-table__body td {*/
+  /*padding: 0;*/
+  /*height: 40px;*/
+  /*font-size: 14px;*/
+/*}*/
+/*修改dialog 遮罩板颜色 */
+.v-modal{
+  background-color: rgba(0,0,0,0.2);
+}

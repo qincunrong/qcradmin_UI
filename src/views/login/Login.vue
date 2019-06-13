@@ -10,7 +10,7 @@
     </el-form-item>
     <el-checkbox class="remember" v-model="rememberChecked" checked>记住密码</el-checkbox>
     <el-form-item style="width:100%;">
-      <el-button @click="doLogin" type="primary" style="width:100%;">登录</el-button>
+      <el-button @click="doLogin" type="primary" style="width:100%;" :loading="isLogining">登录</el-button>
     </el-form-item>
 
   </el-form>
@@ -24,6 +24,7 @@
 
         data(){
           return{
+            isLogining:false,
             rememberChecked:true,
             loginForm:{
               username: "admin",
@@ -45,9 +46,11 @@
             let _this=this;
             this.$refs.loginForm.validate((valid)=>{
               if (valid) {
+                this.isLogining=true;
                 let loginParams={username:this.loginForm.username,password:this.loginForm.password}
                 requestLogin(loginParams).then(data=>{
                   let {code,msg,user}=data
+                  this.isLogining=false
                   if (code !== 200) {
                     //登录不成功
                     this.$message.error(msg);

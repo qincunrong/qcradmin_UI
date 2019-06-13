@@ -2,7 +2,7 @@ class StringUtils{
 
     static isEmpty(content){
 
-      if (content == null || content.length == 0) {
+      if (!content || content.length == 0) {
         return true;
       }
       return false

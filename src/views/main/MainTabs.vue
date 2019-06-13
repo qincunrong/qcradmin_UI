@@ -28,7 +28,7 @@
     </el-col>
 
     <el-row class="main" :span="24">
-      <el-col class="main_aside" :span="6" >
+      <el-col class="main_aside" :span="6" :class="isCollapse?'main_aside_collapse':'main_aside_uncollapse'" >
         <el-menu :default-active="currentComponent"
                  @open="asideOpen"
                  @close="asideClose"
@@ -260,6 +260,13 @@
           min-height: 400px;
         }
 
+      }
+      .main_aside_collapse{
+        width:66px;
+      }
+
+      .main_aside_uncollapse{
+        width:230px;
       }
 
       .main_content {

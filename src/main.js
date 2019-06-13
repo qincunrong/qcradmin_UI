@@ -7,9 +7,8 @@ import ElementUI from 'element-ui';
 import Mock from './mock'
 
 import '@css/reset_ui.css'
-// import 'element-ui/lib/theme-chalk/index.css'
 import './theme/element_theme.css'
-import StringUtils from '@js/StringUtils'
+import './theme/custom_element.css'
 
 Mock.bootstrap();
 Vue.use(ElementUI);
